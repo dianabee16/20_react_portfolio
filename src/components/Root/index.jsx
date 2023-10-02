@@ -1,36 +1,37 @@
 import React from 'react'
 import {Link, Outlet} from "react-router-dom"
+import "./root.css"
 
 const Root = () => {
   return (
     <div>
-        <ul>
-            <li>
-                <Link to="/">
+        <ul className='nav'>
+            <li className='nav-item'>
+                <Link to="/" className='nav-link'>
                 <span>
                     Home
                 </span>
                 </Link>
             </li>
 
-            <li>
-                <Link to="/contact">
+            <li className='nav-item'>
+                <Link to="/contact" className='nav-link'>
                 <span>
                     Contact
                 </span>
                 </Link>
             </li>
 
-            <li>
-                <Link to="/projects">
+            <li className='nav-item'>
+                <Link to="/projects" className='nav-link'>
                 <span>
                     Projects
                 </span>
                 </Link>
             </li>
 
-            <li>
-                <Link to="/resume">
+            <li className='nav-item'>
+                <Link to="/resume" className='nav-link'>
                 <span>
                     Resume
                 </span>
